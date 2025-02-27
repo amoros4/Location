@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+    font-size: 24px;
+    z-index: 99;
+    color: black;
+    background-color: #227093;
+    height: 60px;
+}
+header .logo {
+    font-size: 120%;
+    font-style: oblique;
+}
+header .logo span {
+    color: brown;
+}
+header .menu a {
+    position: relative;
+    margin: 10px;
+    text-decoration: 0;
+    color: black;
+    transition: 0.5s;
+}
+header .menu a:before {
+    position: absolute;
+    top: -2px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    transition: 0.5s; 
+}
+header .menu a:before {
+    width: 100%;
+}
+header .menu a:hover {
+    color: aliceblue;
+}
+/* home */
+
+.home {
+    height: calc(100vh -55px);
+    background: url("image1.jnp.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: right;
+    padding: 200px;
+    padding-left: 5%;
+    padding-bottom: 200px;
+    opacity: 5;
+}
+.home-infos {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 50px;
+    animation: anime 2s linear;
+}
+
+/* animation home-infos */
+
+@keyframes anime {
+    from{
+        transform: translateX(-600px);
+    }
+}
+.home-infos h1 {
+    font-size: 30px; 
+    text-transform: 20px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.home-infos p {
+    margin-top: 16px;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    vertical-align: bottom;
+    text-align: center;
+}
+.home-infos a {
+    text-decoration: 0;
+    border: 2px solid #93939313;
+    color: #93d6d0;
+    border-radius: 4px;
+    padding: 3px 18px;
+    margin-top: 5px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: 0.5s;
+    white-space: nowrap;
+    text-align: center;
+}
+.home-infos a:hover {
+    background-color: aqua;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/*Debut Galerie*/
+.Debutgalerie-infos h1 {
+    font-size: 60px;
+    text-align: center;
+}
+.Debutgalerie-infos p {
+    font-size: 30px;
+    text-align: center;
+}
+.Nosgammes {
+    margin: 15px;
+    border: 1px solid whitesmoke;
+    float: left;
+    width: 100px;
+    
+}
+.Nosgammes:hover {
+    border: 2px solid green;
+}
+.Nosgammes img {
+    width: 110%;
+    height: 100px;
+}
+.textNosgammes {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Avis client */
+.Avis-client {
+    padding: 0 12px;
+}
+.title {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+.Avisclient-infos {
+    grid-template-columns: repeat(auto-fit,20rem);
+    justify-content: center;
+    border-radius: 6px;
+    padding: 12px;
+    gap: 20px;
+}
+.Avisclient-infos h2 {
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.Avisclient-infos p {
+    font-size: 16px;
+    text-align: center;
+}
+.Avisclient-infos:hover{
+    background-color: #227093;
+}
+.Avisclient-infos:hover h2 {
+    color: beige;
+}
+.Avisclient-infos:hover p {
+    color: black;
+}
+/* footer */
+footer{
+    padding: 15px;
+    background: url("image1.jnp.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+footer .title {
+    margin-bottom: 20px;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .class-form {
+    
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+.contact h4 {
+    margin-bottom: 20px;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+.contact form input , textarea {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #93d6d0;
+    resize: unset;
+    outline: 0;
+}
+.contact form button {
+    width: fit-content;
+    padding: 10px 25px;
+    background-color: rosybrown;
+    border: 0;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+}
+
+.address {
+    width: 50%;
+    height: 300px;
+}
+.end {
+    margin-top: 50px;
+    background-color: #227093;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0;
+    color: black;
+}
